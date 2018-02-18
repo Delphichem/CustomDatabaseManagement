@@ -1,0 +1,92 @@
+Before opening the project you'll have to install these packages, then restart Delphi.
+-C:\3rd Party VCL\Delphi 2007 add ons\JEDI\jvcl\packages\d11\JVStdCtrls.dpk
+-kbmMemTable
+-SynEdit(in the SMSDataEditor svn folder)
+-smcmpnt(in the SMSDataEditor svn folder)
+
+Remember to update SMSDataEditor Manual with screenshots, etc if you add a feature. And delete it
+from the list below.
+
+You can log your time under task 025827
+
+TO DO
+
+1. Close Tab bug.
+Background
+Have a brief look at uuTab, there is a class called 'tab'. The main form has an array of 'tab' objects. 
+When you press one of the red crosses it calls the function CloseTab(aIndex : Integer). This function places the tab at the end by changing 
+its pageindex, then shifts the objects in the array of tabs down by one so they remain lined up.
+
+When you choose a table and press enter it calls the function SetTable, which grabs the text in the 
+combobox and opens that table in the active tab. There is nothing wrong with this function.
+
+The Problem
+Open up a few tables, say 4. When you close the 3rd one, everything seems to work correctly, the other tabs move down.
+But then if you try to open another table after that into one of the tabs, it stuffs up.
+When you close a tab, the pgTable.ActivePageIndex seems to be correct at the end of the CloseTab 
+function. But when you open a new table, the value of pgTable.ActivePageIndex has mysteriously 
+changed to something else. The SetTable function tries to open the table using 
+pgTable.ActivePageIndex. Where is it changing the value of pgTable.ActivePageIndex?
+
+2. Pasting into the filter row 
+Try pasting something into the yellow filter row. It doesn't trigger the filtering. You then
+have to change a letter, then change it back just to trigger the filtering. Slightly annoying.
+This filter row is an inbuilt feature of the SMDBGrid and should do it automatically. The grid 
+doesn't seem to have any event that will catch the paste. Options I can think of;
+- Somehow catch the windows WM_PASTE message when the filter row has focus
+(something like this)
+http://www.swissdelphicenter.com/torry/showcode.php?id=1403
+
+then call 
+tab[pgTable.ActivePageIndex].Grid.ApplyFilter;
+
+- Do the same thing but catch the Ctrl+V keypress. This option if for noobs, easier but dirtier. Whatever works.
+
+3. When you right click a node in the database tree when its expanded, it shows a pop up menu. But
+at the same time it collapses the node. Annoying, we only want expanding/collapsing to happen
+when left clicking. The treeview's mouse down event creates the pop up,
+and the treeview's OnChange event does the expanding. The trouble with this is the order of events.
+
+4. When you run a select query the grid/fields are made read only, unfortunately this stops the user from copying a cell.
+We still want to allow this with changing the field. Maybe override the dataset OnBeforeEdit/OnAfterEdit event in uuTab.
+
+5. Sub branch for tables/views/stored procedures/generators, etc in database tree.
+Since SMS doesn't use any of these yet it's not really needed. But the TempSQLAlias (Head Office) does.
+Nice feature to have anyway. The database functions needed would have to go into ISQLDataBase I think.
+
+6. If you type 'sel' into the sql editor then press space, it autocompletes and puts in 'select'. We only want
+it to autocomplete by pressing enter, not space. 
+
+7. Add more sql keywords to AddSQLKeywordsToCompletionList
+
+8. The method used for generating a select statement right is ok, it's quicker than typing. But a 
+graphical approch like Microsoft SQL Server Studio's query builder would be better. Anyone got
+the energy for this?
+
+9. File association. Open file with SMSDataEditor.exe
+
+9. Copy any needed features from Nexus data editor/DataBase Desktop...
+
+
+UPDATING THE SMSCONFIG_MNEMONIC COMBOBOX ITEMS
+-Open the latest config guide, press Alt+F11, select the project, Insert->Module
+-Paste in this VB script and execute
+Sub BkMarkList()
+    Dim J As Integer
+
+    Selection.TypeParagraph
+    Selection.InsertBreak Type:=wdColumnBreak
+    Selection.TypeText Text:="Bookmark list for "
+    Selection.TypeText Text:=ActiveDocument.Name
+    Selection.TypeParagraph
+    For J = 1 To ActiveDocument.Bookmarks.Count
+        Selection.TypeText Text:=ActiveDocument.Bookmarks(J).Name
+        Selection.TypeParagraph
+    Next J
+    Selection.InsertBreak Type:=wdColumnBreak
+End Sub
+-It will place a list of bookmarks into the document, copy them into Excel(into the 2nd column)
+-Put C1=, C2=, C3=, etc into the first column and save as .csv
+-Open it as a text file and copy into SMSDataEditor.ini, commit it to SVN
+
+ 

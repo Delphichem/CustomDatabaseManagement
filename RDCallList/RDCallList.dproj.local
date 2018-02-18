@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/04/13 21:34:02.844.pas,C:\Users\CampbellD\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\udCalls.pas</Transaction>
+    <Transaction>2016/04/13 21:34:02.844.dfm,C:\Users\CampbellD\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\udCalls.dfm</Transaction>
+    <Transaction>2016/04/13 21:34:14.256.dproj,C:\Users\CampbellD\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\RDCallList.dproj</Transaction>
+    <Transaction>2016/04/13 21:57:42.349.pas,C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\Library\ufReference.pas=</Transaction>
+    <Transaction>2016/04/24 21:58:22.217.pas,C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\Unit1.pas=C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\udWhoAmI.pas</Transaction>
+    <Transaction>2016/04/24 21:58:22.217.dfm,C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\Unit1.dfm=C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\udWhoAmI.dfm</Transaction>
+    <Transaction>2016/04/24 22:57:58.231.pas,C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\Unit1.pas=C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\udTimesheets.pas</Transaction>
+    <Transaction>2016/04/24 22:57:58.231.dfm,C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\Unit1.dfm=C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\udTimesheets.dfm</Transaction>
+    <Transaction>2016/04/25 15:52:23.102.pas,C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\Library\ufNexusDatabase.pas=</Transaction>
+    <Transaction>2016/04/25 15:52:29.865.pas,C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\Library\ufNexusQuery.pas=</Transaction>
+    <Transaction>2016/04/25 15:52:33.703.pas,C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\Library\ufPDXDatabase.pas=</Transaction>
+    <Transaction>2016/04/25 15:52:36.719.pas,C:\Users\CampbellD\Documents\RAD Studio\Projects\RDCallList\Library\ufPDXQuery.pas=</Transaction>
+    <Transaction>2016/07/22 19:05:40.633.pas,C:\svn\rd\SMS General\SMS Data Editor\RDCallList\Unit1.pas=C:\svn\rd\SMS General\SMS Data Editor\RDCallList\udStats.pas</Transaction>
+    <Transaction>2016/07/22 19:05:40.633.dfm,C:\svn\rd\SMS General\SMS Data Editor\RDCallList\Unit1.dfm=C:\svn\rd\SMS General\SMS Data Editor\RDCallList\udStats.dfm</Transaction>
+    <Transaction>2016/07/23 13:30:47.842.pas,C:\svn\rd\SMS General\SMS Data Editor\RDCallList\Unit1.pas=C:\svn\rd\SMS General\SMS Data Editor\RDCallList\uuGlobals.pas</Transaction>
+  </Transactions>
+</BorlandProject>
