@@ -1,0 +1,134 @@
+object dAddNewSQL: TdAddNewSQL
+  Left = 0
+  Top = 0
+  Caption = 'Add New SQL Favourite'
+  ClientHeight = 304
+  ClientWidth = 500
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  OnKeyDown = FormKeyDown
+  PixelsPerInch = 96
+  TextHeight = 13
+  object mmoSQL: TSynMemo
+    Left = 8
+    Top = 32
+    Width = 483
+    Height = 225
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Courier New'
+    Font.Style = []
+    TabOrder = 0
+    Gutter.DigitCount = 3
+    Gutter.Font.Charset = DEFAULT_CHARSET
+    Gutter.Font.Color = clWindowText
+    Gutter.Font.Height = -11
+    Gutter.Font.Name = 'Courier New'
+    Gutter.Font.Style = []
+    Gutter.LeftOffset = 0
+    Gutter.ShowLineNumbers = True
+    Gutter.Width = 10
+    Highlighter = SynSQLSyn1
+    FontSmoothing = fsmNone
+  end
+  object btnOK: TButton
+    Left = 156
+    Top = 263
+    Width = 171
+    Height = 36
+    Caption = 'Add'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ModalResult = 1
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnOKClick
+  end
+  object btnCancel: TButton
+    Left = 333
+    Top = 263
+    Width = 159
+    Height = 36
+    Caption = 'Cancel'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 3
+  end
+  object rbPersonal: TRadioButton
+    Left = 16
+    Top = 263
+    Width = 113
+    Height = 17
+    Caption = 'Personal'
+    Checked = True
+    TabOrder = 4
+    TabStop = True
+    OnClick = rbPersonalClick
+  end
+  object rbEveryone: TRadioButton
+    Left = 16
+    Top = 280
+    Width = 113
+    Height = 17
+    Caption = 'For Everyone'
+    TabOrder = 5
+    OnClick = rbEveryoneClick
+  end
+  object edtDescription: TLabeledEdit
+    Left = 80
+    Top = 0
+    Width = 412
+    Height = 26
+    EditLabel.Width = 70
+    EditLabel.Height = 18
+    EditLabel.Caption = 'Description'
+    EditLabel.Font.Charset = DEFAULT_CHARSET
+    EditLabel.Font.Color = clWindowText
+    EditLabel.Font.Height = -15
+    EditLabel.Font.Name = 'Tahoma'
+    EditLabel.Font.Style = []
+    EditLabel.ParentFont = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    LabelPosition = lpLeft
+    ParentFont = False
+    TabOrder = 1
+  end
+  object SynSQLSyn1: TSynSQLSyn
+    Options.AutoDetectEnabled = False
+    Options.AutoDetectLineLimit = 0
+    Options.Visible = False
+    CommentAttri.Foreground = clGreen
+    ConditionalCommentAttri.Foreground = clGreen
+    DataTypeAttri.Foreground = clTeal
+    FunctionAttri.Foreground = clPurple
+    IdentifierAttri.Foreground = clMaroon
+    KeyAttri.Foreground = clBlue
+    NumberAttri.Foreground = clMenuHighlight
+    StringAttri.Foreground = clRed
+    SymbolAttri.Foreground = clGray
+    TableNameAttri.Foreground = clGreen
+    VariableAttri.Foreground = clTeal
+    Left = 352
+    Top = 224
+  end
+end

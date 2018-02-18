@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/01/15 15:29:46.550.dproj,C:\Users\CampbellD\Documents\RAD Studio\Projects\Project1.dproj=C:\svn\rd\SMS General\SMS Data Editor\TaskList.dproj</Transaction>
+    <Transaction>2016/01/29 14:22:50.210.pas,C:\svn\rd\SMS General\SMS Data Editor\udTaskCommit.pas=</Transaction>
+    <Transaction>2016/01/29 14:22:50.210.dfm,C:\svn\rd\SMS General\SMS Data Editor\udTaskCommit.dfm=</Transaction>
+    <Transaction>2016/02/08 21:33:06.893.pas,C:\svn\rd\SMS General\SMS Data Editor\Unit1.pas=C:\svn\rd\SMS General\SMS Data Editor\udShowTask.pas</Transaction>
+    <Transaction>2016/02/08 21:33:06.893.dfm,C:\svn\rd\SMS General\SMS Data Editor\Unit1.dfm=C:\svn\rd\SMS General\SMS Data Editor\udShowTask.dfm</Transaction>
+    <Transaction>2016/02/08 22:09:40.623.pas,C:\svn\rd\SMS General\SMS Data Editor\Unit1.pas=C:\svn\rd\SMS General\SMS Data Editor\udTaskComplete.pas</Transaction>
+    <Transaction>2016/02/08 22:09:40.623.dfm,C:\svn\rd\SMS General\SMS Data Editor\Unit1.dfm=C:\svn\rd\SMS General\SMS Data Editor\udTaskComplete.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

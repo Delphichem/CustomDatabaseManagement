@@ -1,0 +1,92 @@
+object dLocate: TdLocate
+  Left = 0
+  Top = 0
+  Caption = 'Locate'
+  ClientHeight = 86
+  ClientWidth = 538
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  OnKeyDown = FormKeyDown
+  PixelsPerInch = 96
+  TextHeight = 13
+  object edtLocate: TLabeledEdit
+    Left = 192
+    Top = 12
+    Width = 209
+    Height = 24
+    EditLabel.Width = 73
+    EditLabel.Height = 16
+    EditLabel.Caption = 'lblFieldName'
+    EditLabel.Font.Charset = DEFAULT_CHARSET
+    EditLabel.Font.Color = clWindowText
+    EditLabel.Font.Height = -13
+    EditLabel.Font.Name = 'Tahoma'
+    EditLabel.Font.Style = []
+    EditLabel.ParentFont = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    LabelPosition = lpLeft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object cbPartialMatch: TCheckBox
+    Left = 433
+    Top = 8
+    Width = 97
+    Height = 17
+    Caption = 'Partial Match'
+    Checked = True
+    State = cbChecked
+    TabOrder = 1
+  end
+  object cbCaseInsensitive: TCheckBox
+    Left = 433
+    Top = 24
+    Width = 97
+    Height = 17
+    Caption = 'Case Insensitive'
+    Checked = True
+    State = cbChecked
+    TabOrder = 2
+  end
+  object btnCancel: TButton
+    Left = 289
+    Top = 43
+    Width = 75
+    Height = 30
+    Caption = 'Cancel'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 3
+  end
+  object btnOK: TButton
+    Left = 208
+    Top = 43
+    Width = 75
+    Height = 30
+    Caption = 'OK'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ModalResult = 1
+    ParentFont = False
+    TabOrder = 4
+  end
+end

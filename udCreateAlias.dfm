@@ -1,0 +1,103 @@
+object dCreateAlias: TdCreateAlias
+  Left = 0
+  Top = 0
+  Caption = 'Create/Edit Alias'
+  ClientHeight = 157
+  ClientWidth = 319
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 59
+    Width = 128
+    Height = 19
+    Caption = 'Working Directory'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblAlias: TLabel
+    Left = 8
+    Top = 8
+    Width = 34
+    Height = 19
+    Caption = 'Alias'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object edtAlias: TEdit
+    Left = 8
+    Top = 31
+    Width = 137
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object btnCancel: TButton
+    Left = 159
+    Top = 117
+    Width = 98
+    Height = 32
+    Caption = 'Cancel'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 1
+  end
+  object btnOK: TButton
+    Left = 40
+    Top = 117
+    Width = 113
+    Height = 32
+    Caption = 'Create/Edit'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ModalResult = 1
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnOKClick
+  end
+  object edtWorkingDirectory: TJvDirectoryEdit
+    Left = 8
+    Top = 84
+    Width = 305
+    Height = 27
+    DialogKind = dkWin32
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+end

@@ -1,0 +1,54 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0bc36dbc-c500-42a0-89c7-df92ecb04ba6}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="RDCallList\RDCallList.dproj" />
+    <Projects Include="SMSDataEditor.dproj" />
+    <Projects Include="TaskList.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="SMSDataEditor">
+    <MSBuild Projects="SMSDataEditor.dproj" Targets="" />
+  </Target>
+  <Target Name="SMSDataEditor:Clean">
+    <MSBuild Projects="SMSDataEditor.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="SMSDataEditor:Make">
+    <MSBuild Projects="SMSDataEditor.dproj" Targets="Make" />
+  </Target>
+  <Target Name="TaskList">
+    <MSBuild Projects="TaskList.dproj" Targets="" />
+  </Target>
+  <Target Name="TaskList:Clean">
+    <MSBuild Projects="TaskList.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="TaskList:Make">
+    <MSBuild Projects="TaskList.dproj" Targets="Make" />
+  </Target>
+  <Target Name="RDCallList">
+    <MSBuild Projects="RDCallList\RDCallList.dproj" Targets="" />
+  </Target>
+  <Target Name="RDCallList:Clean">
+    <MSBuild Projects="RDCallList\RDCallList.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="RDCallList:Make">
+    <MSBuild Projects="RDCallList\RDCallList.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="SMSDataEditor;TaskList;RDCallList" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="SMSDataEditor:Clean;TaskList:Clean;RDCallList:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="SMSDataEditor:Make;TaskList:Make;RDCallList:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

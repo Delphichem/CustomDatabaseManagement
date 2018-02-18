@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{f0153ca5-9f31-4ae8-973a-7d132fcf825a}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>SMSDataEditor.exe</DCC_DependencyCheckOutputName>
+    <MainSource>SMSDataEditor.dpr</MainSource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters><Parameters Name="RunParams">-dev</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">3081</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">SMSDataEditor.dpr</Source></Source><Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+    </Excluded_Packages></Delphi.Personality><ModelSupport>False</ModelSupport></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="SMSDataEditor.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="DataEditorCode.pas">
+      <Form>frmDataEditor</Form>
+    </DCCReference>
+    <DCCReference Include="Library\ufBDELockHandler.pas" />
+    <DCCReference Include="Library\ufDBEDatabase.pas" />
+    <DCCReference Include="Library\ufDBEQuery.pas" />
+    <DCCReference Include="Library\ufISQLDatabase.pas" />
+    <DCCReference Include="Library\ufISQLQuery.pas" />
+    <DCCReference Include="Library\ufNexusDatabase.pas" />
+    <DCCReference Include="Library\ufNexusQuery.pas" />
+    <DCCReference Include="Library\ufPDXDatabase.pas" />
+    <DCCReference Include="Library\ufPDXQuery.pas" />
+    <DCCReference Include="Library\ufReference.pas" />
+    <DCCReference Include="Library\ufTFQuery.pas" />
+    <DCCReference Include="udAddNewSQL.pas">
+      <Form>dAddNewSQL</Form>
+    </DCCReference>
+    <DCCReference Include="udChooseDB.pas">
+      <Form>dChooseDB</Form>
+    </DCCReference>
+    <DCCReference Include="udColumnVisibility.pas">
+      <Form>dColumnVisibility</Form>
+    </DCCReference>
+    <DCCReference Include="udCompareDB.pas">
+      <Form>dCompareDB</Form>
+    </DCCReference>
+    <DCCReference Include="udCreateAlias.pas">
+      <Form>dCreateAlias</Form>
+    </DCCReference>
+    <DCCReference Include="udDataGenie.pas">
+      <Form>dDataGenie</Form>
+    </DCCReference>
+    <DCCReference Include="udDlgColumn.pas">
+      <Form>dDlgColumn</Form>
+    </DCCReference>
+    <DCCReference Include="udDlgIndex.pas">
+      <Form>dDlgIndex</Form>
+    </DCCReference>
+    <DCCReference Include="udDlgTable.pas">
+      <Form>dDlgTable</Form>
+    </DCCReference>
+    <DCCReference Include="udExport.pas">
+      <Form>dExport</Form>
+    </DCCReference>
+    <DCCReference Include="udInsertSQL.pas">
+      <Form>dInsertSQL</Form>
+    </DCCReference>
+    <DCCReference Include="udLocate.pas">
+      <Form>dLocate</Form>
+    </DCCReference>
+    <DCCReference Include="udMSSQLConnect.pas">
+      <Form>dMSSQLConnect</Form>
+    </DCCReference>
+    <DCCReference Include="udRecordView.pas">
+      <Form>dRecordView</Form>
+    </DCCReference>
+    <DCCReference Include="udRegisterServers.pas">
+      <Form>dRegisterServers</Form>
+    </DCCReference>
+    <DCCReference Include="udRegistryPrompt.pas">
+      <Form>dRegistryPrompt</Form>
+    </DCCReference>
+    <DCCReference Include="udSchemaChange.pas">
+      <Form>dSchemaChange</Form>
+    </DCCReference>
+    <DCCReference Include="udSelectOptions.pas">
+      <Form>dSelectOptions</Form>
+    </DCCReference>
+    <DCCReference Include="udSettings.pas">
+      <Form>dSettings</Form>
+    </DCCReference>
+    <DCCReference Include="udSMSConfigs.pas">
+      <Form>dSMSConfigs</Form>
+    </DCCReference>
+    <DCCReference Include="udSMSLinks.pas">
+      <Form>dSMSLinks</Form>
+    </DCCReference>
+    <DCCReference Include="udSMSTools.pas">
+      <Form>dSMSTools</Form>
+    </DCCReference>
+    <DCCReference Include="udSQLFavourites.pas">
+      <Form>dSQLFavourites</Form>
+    </DCCReference>
+    <DCCReference Include="udSQLParams.pas">
+      <Form>dSQLParams</Form>
+    </DCCReference>
+    <DCCReference Include="uuGlobals.pas" />
+    <DCCReference Include="uuServerList.pas" />
+    <DCCReference Include="uuSQLEditor.pas" />
+    <DCCReference Include="uuTab.pas" />
+  </ItemGroup>
+</Project>
